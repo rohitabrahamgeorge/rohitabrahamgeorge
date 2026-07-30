@@ -7,10 +7,9 @@ Your content should be winning customers. Now it can. At Edbound, we build what 
 ## Currently
 
 - Building content hubs and helping B2B AI Tech companies and Membership organizations build their go-to-market motions on [Edbound AI](https://www.edbound.ai/): resource centers, content hub platforms, and AI workflows that convert your audience
-- - Writing about product marketing, positioning, and content strategy that wins customers
-  - - Exploring how AI workflows reshape the way marketing teams create, distribute, and convert content
+- Writing about product marketing, positioning, and content strategy that wins customers
+- Exploring how AI workflows reshape the way marketing teams create, distribute, and convert content
    
-    - ## Find me
-   
-    - - Edbound AI: https://www.edbound.ai/
-      - - LinkedIn: https://www.linkedin.com/in/rohit-abraham-george
+## Find me
+- LinkedIn: https://www.linkedin.com/in/rohit-abraham-george   
+- Twitter: https://x.com/GeorgeRohitA1
