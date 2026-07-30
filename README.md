@@ -13,4 +13,3 @@ I turn complex products into clear stories and go-to-market strategies. Previous
 ## Find me
 
 - LinkedIn: https://www.linkedin.com/in/rohit-abraham-george
-- Email: georgeabrahamrohit@gmail.com
