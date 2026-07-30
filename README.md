@@ -1,16 +1,16 @@
-## Hi there 👋
+# Hi, I'm George 👋
 
-<!--
-**rohitabrahamgeorge/rohitabrahamgeorge** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Product Marketing & Content Lead at [Edbound AI](https://edbound.ai)**
 
-Here are some ideas to get you started:
+I turn complex products into clear stories and go-to-market strategies. Previously at Knorish, IBM, and HCL.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Currently
+
+- Building content and go-to-market motions for Edbound AI
+- Writing about product marketing, positioning, and content strategy
+- Exploring how AI reshapes the way marketing teams work
+
+## Find me
+
+- LinkedIn: https://www.linkedin.com/in/rohit-abraham-george
+- Email: georgeabrahamrohit@gmail.com
