@@ -20,8 +20,11 @@ Animated homepages that run live in the browser. **[See all my work →](https:/
 
 ## Claude Skills
 
+<a href="https://github.com/rohitabrahamgeorge/seo-content-team"><img src="https://raw.githubusercontent.com/rohitabrahamgeorge/seo-content-team/main/assets/seo-team-hero.svg" alt="SEO Content Team: one competitor in, a full comparison cluster out" width="720"></a>
+
+**[SEO Content Team](https://github.com/rohitabrahamgeorge/seo-content-team)**: eleven Claude skills that plan, write, QA, interlink and track a full "you vs them" comparison cluster. [Repo](https://github.com/rohitabrahamgeorge/seo-content-team) · [Install](https://github.com/rohitabrahamgeorge/seo-content-team#install-in-2-minutes)
+
 - **[Podcast Repurposing Engine](https://github.com/rohitabrahamgeorge/podcast-repurposing-engine)**: one transcript in, a month of content out.
-- **[SEO Content Team](https://github.com/rohitabrahamgeorge/seo-content-team)**: a full SEO content team as Claude skills.
 
 ## Find me
 - LinkedIn: https://www.linkedin.com/in/rohit-abraham-george   
