@@ -24,9 +24,9 @@ Animated homepages that run live in the browser. **[See all my work →](https:/
 
 ## Northstar
 
-<a href="https://github.com/rohitabrahamgeorge/northstar"><img src="https://raw.githubusercontent.com/rohitabrahamgeorge/northstar/main/assets/northstar-hero.svg" alt="Northstar: a Notion task board run by Claude that ranks what's most urgent, what to do first and what matters most" width="720"></a>
+<a href="https://github.com/rohitabrahamgeorge/northstar"><img src="https://raw.githubusercontent.com/rohitabrahamgeorge/northstar/main/assets/northstar-hero.svg" alt="Northstar: a Notion task board run by voice and Claude that ranks what's most urgent, what to do first and what matters most" width="720"></a>
 
-Time tracking, project management and daily priorities in Notion, run by Claude. Ask "what should I do next?" and it tells you what's **most urgent**, what to **do first** and what's **most important**, runs your timers, turns meeting notes into tasks and writes your weekly report. **[View the repo](https://github.com/rohitabrahamgeorge/northstar)** · [Install](https://github.com/rohitabrahamgeorge/northstar#install-in-2-minutes) · MIT
+Voice-driven time tracking, project management and daily priorities in Notion, run by Claude. Say *"mark launch QA done"* and the task moves itself. Ask "what should I do next?" and it tells you what's **most urgent**, what to **do first** and what's **most important**, runs your timers, turns meeting notes into tasks and writes your weekly report. **[View the repo](https://github.com/rohitabrahamgeorge/northstar)** · [Install](https://github.com/rohitabrahamgeorge/northstar#install-in-2-minutes) · MIT
 
 ## SEO Content Team
 
