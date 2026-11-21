@@ -1,0 +1,728 @@
+{
+  "generated_at": "2026-11-21",
+  "self_linkedin_url": "",
+  "gtm": [
+    {
+      "name": "Josh Braun",
+      "linkedin_url": "https://www.linkedin.com/in/josh-braun/",
+      "headline_or_company": "Founder, Sales DNA / Braun Training; host Inside Selling",
+      "why_popular": "#1 on Favikon US growth-marketing ranking; outbound prospecting posts",
+      "location_confidence": "high",
+      "source": "https://gtmnow.com/author/josh-braun/"
+    },
+    {
+      "name": "John Barrows",
+      "linkedin_url": "https://www.linkedin.com/in/johnbarrows/",
+      "headline_or_company": "CEO, JB Sales",
+      "why_popular": "#1 on Clutch 2025 B2B sales influencers; sales training",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Scott Leese",
+      "linkedin_url": "https://www.linkedin.com/in/scottleese/",
+      "headline_or_company": "Founder & CEO, Scott Leese Consulting",
+      "why_popular": "Startup GTM and founder-led sales",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Sam Jacobs",
+      "linkedin_url": "https://www.linkedin.com/in/samfjacobs/",
+      "headline_or_company": "Founder & CEO, Pavilion",
+      "why_popular": "Pavilion GTM community founder",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Marcus Chan",
+      "linkedin_url": "https://www.linkedin.com/in/marcuschanmba/",
+      "headline_or_company": "Founder, Venli Consulting; author Six-Figure Sales Secrets",
+      "why_popular": "LinkedIn Top Sales Voice, B2B sales coaching",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Jeb Blount",
+      "linkedin_url": "https://www.linkedin.com/in/jebblount/",
+      "headline_or_company": "CEO, Sales Gravy",
+      "why_popular": "Prospecting author/trainer",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Jared Robin",
+      "linkedin_url": "https://www.linkedin.com/in/jaredrobin/",
+      "headline_or_company": "Founder, RevGenius",
+      "why_popular": "RevGenius GTM community",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Scott Barker",
+      "linkedin_url": "https://www.linkedin.com/in/ssbarker/",
+      "headline_or_company": "Partner, GTMfund",
+      "why_popular": "GTM/sales operator content",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Alexine Mudawar",
+      "linkedin_url": "https://www.linkedin.com/in/alexine-mudawar/",
+      "headline_or_company": "CEO, Women in Sales",
+      "why_popular": "Sales community leader",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Amelia Taylor",
+      "linkedin_url": "https://www.linkedin.com/in/tayloramelia/",
+      "headline_or_company": "Founder, The Revenue Table",
+      "why_popular": "Revenue/sales leadership content (Tampa)",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Alexa D'Agostino",
+      "linkedin_url": "https://www.linkedin.com/in/alexadagostino/",
+      "headline_or_company": "Fractional CMO and CRO",
+      "why_popular": "#2 Favikon US growth marketing; GTM strategy",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-sales-influencers-2025"
+    },
+    {
+      "name": "Chris Walker",
+      "linkedin_url": "https://www.linkedin.com/in/chriswalker171/",
+      "headline_or_company": "CEO, Passetto (ex Refine Labs)",
+      "why_popular": "Demand gen / marketing-led GTM",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Morgan J. Ingram",
+      "linkedin_url": "https://www.linkedin.com/in/morganjingram/",
+      "headline_or_company": "Founder & CEO, AMP Creative",
+      "why_popular": "Social selling, SDR/outbound (copy.ai lists slug morganjingramamp)",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Matt Heinz",
+      "linkedin_url": "https://www.linkedin.com/in/mattheinz/",
+      "headline_or_company": "Founder, Heinz Marketing",
+      "why_popular": "B2B demand gen and pipeline",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Kyle Coleman",
+      "linkedin_url": "https://www.linkedin.com/in/kyletcoleman/",
+      "headline_or_company": "CMO, Copy.ai (ex Clari)",
+      "why_popular": "AI-native GTM; Exit Five top voice",
+      "location_confidence": "high",
+      "source": "https://www.copy.ai/blog/go-to-market-ai-leaders-to-follow-on-linkedin"
+    },
+    {
+      "name": "Sangram Vajre",
+      "linkedin_url": "https://www.linkedin.com/in/sangramvajre/",
+      "headline_or_company": "Co-founder & CEO, GTM Partners",
+      "why_popular": "GTM strategy, ABM pioneer",
+      "location_confidence": "high",
+      "source": "https://www.copy.ai/blog/go-to-market-ai-leaders-to-follow-on-linkedin"
+    },
+    {
+      "name": "Sahil Mansuri",
+      "linkedin_url": "https://www.linkedin.com/in/sahilmansuri/",
+      "headline_or_company": "CEO, Bravado",
+      "why_popular": "Sales community and GTM",
+      "location_confidence": "high",
+      "source": "https://www.copy.ai/blog/go-to-market-ai-leaders-to-follow-on-linkedin"
+    },
+    {
+      "name": "Chris Orlob",
+      "linkedin_url": "https://www.linkedin.com/in/chrisorlob/",
+      "headline_or_company": "Founder, pclub.io (ex Gong)",
+      "why_popular": "Deal execution, sales tactics",
+      "location_confidence": "high",
+      "source": "https://www.copy.ai/blog/go-to-market-ai-leaders-to-follow-on-linkedin"
+    },
+    {
+      "name": "Kevin \"KD\" Dorsey",
+      "linkedin_url": "https://www.linkedin.com/in/kddorsey3/",
+      "headline_or_company": "Sales leader/CRO advisor",
+      "why_popular": "Sales leadership and coaching",
+      "location_confidence": "high",
+      "source": "https://www.copy.ai/blog/go-to-market-ai-leaders-to-follow-on-linkedin"
+    },
+    {
+      "name": "Samantha McKenna",
+      "linkedin_url": "https://www.linkedin.com/in/samsalesli/",
+      "headline_or_company": "Founder, #samsales Consulting",
+      "why_popular": "Outbound and enterprise prospecting",
+      "location_confidence": "high",
+      "source": "https://www.copy.ai/blog/go-to-market-ai-leaders-to-follow-on-linkedin"
+    },
+    {
+      "name": "Jen Allen-Knuth",
+      "linkedin_url": "https://www.linkedin.com/in/demandjen1/",
+      "headline_or_company": "Founder, DemandJen",
+      "why_popular": "Buyer-focused sales messaging",
+      "location_confidence": "high",
+      "source": "https://www.copy.ai/blog/go-to-market-ai-leaders-to-follow-on-linkedin"
+    },
+    {
+      "name": "Armand Farrokh",
+      "linkedin_url": "https://www.linkedin.com/in/armand-farrokh/",
+      "headline_or_company": "Co-founder, 30 Minutes to President's Club",
+      "why_popular": "Top sales podcast; tactical selling (NY)",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Nick Cegelski",
+      "linkedin_url": "https://www.linkedin.com/in/nick-cegelski/",
+      "headline_or_company": "Co-founder, 30 Minutes to President's Club",
+      "why_popular": "Top sales podcast; cold calling",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Jason Bay",
+      "linkedin_url": "https://www.linkedin.com/in/jasondbay/",
+      "headline_or_company": "CEO, Outbound Squad",
+      "why_popular": "Outbound prospecting",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Jake Dunlap",
+      "linkedin_url": "https://www.linkedin.com/in/jakedunlap/",
+      "headline_or_company": "CEO, Skaled Consulting",
+      "why_popular": "Sales strategy and AI in sales",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Brian LaManna",
+      "linkedin_url": "https://www.linkedin.com/in/brianlamanna/",
+      "headline_or_company": "Enterprise AE / sales creator",
+      "why_popular": "Enterprise selling and LinkedIn prospecting",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Leslie Venetz",
+      "linkedin_url": "https://www.linkedin.com/in/leslievenetz/",
+      "headline_or_company": "Founder, The Sales-Led GTM Agency",
+      "why_popular": "Sales-led GTM and outbound",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Tom Slocum",
+      "linkedin_url": "https://www.linkedin.com/in/tomslocum/",
+      "headline_or_company": "Founder & CEO, The SD Lab",
+      "why_popular": "SDR/outbound leadership",
+      "location_confidence": "low",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Mark Roberge",
+      "linkedin_url": "",
+      "headline_or_company": "Co-founder, Stage 2 Capital; ex-CRO HubSpot",
+      "why_popular": "Sales Acceleration Formula, scaling GTM",
+      "location_confidence": "high",
+      "source": "https://www.everythingstartups.com/vc-funds/stage-2-capital"
+    },
+    {
+      "name": "Brian Balfour",
+      "linkedin_url": "https://www.linkedin.com/in/bbalfour/",
+      "headline_or_company": "Founder & CEO, Reforge",
+      "why_popular": "Growth/PLG frameworks",
+      "location_confidence": "high",
+      "source": "https://brianbalfour.com/"
+    },
+    {
+      "name": "Jordan Crawford",
+      "linkedin_url": "",
+      "headline_or_company": "Founder, Blueprint GTM",
+      "why_popular": "Favikon US growth marketing top 20; data-driven outbound",
+      "location_confidence": "low",
+      "source": "https://www.favikon.com/blog/top-growth-marketing-experts-us"
+    },
+    {
+      "name": "Jen Abel",
+      "linkedin_url": "https://www.linkedin.com/in/earlystagesales/",
+      "headline_or_company": "Co-founder, JJELLYFISH",
+      "why_popular": "Founder-led and enterprise sales (Boston)",
+      "location_confidence": "high",
+      "source": "https://www.lennysnewsletter.com/p/jen-abel"
+    },
+    {
+      "name": "Kaylee Edmondson",
+      "linkedin_url": "https://www.linkedin.com/in/kaylee-edmondson/",
+      "headline_or_company": "Founder, DemandLoops",
+      "why_popular": "Demand gen and B2B growth",
+      "location_confidence": "high",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Sam Kuehnle",
+      "linkedin_url": "https://www.linkedin.com/in/samkuehnle/",
+      "headline_or_company": "VP Marketing, Loxo (ex Refine Labs)",
+      "why_popular": "Demand gen, pipeline",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Pranav Piyush",
+      "linkedin_url": "https://www.linkedin.com/in/pranavp/",
+      "headline_or_company": "Co-founder, Paramark",
+      "why_popular": "Marketing measurement and growth; #1 on Exit Five 2025 list",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Adam Jay",
+      "linkedin_url": "https://www.linkedin.com/in/adambjay/",
+      "headline_or_company": "CEO & Co-founder, Revenue Reimagined",
+      "why_popular": "Revenue/GTM strategy",
+      "location_confidence": "high",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Collin Cadmus",
+      "linkedin_url": "https://www.linkedin.com/in/collincadmus/",
+      "headline_or_company": "Consultant & Advisor",
+      "why_popular": "Sales leadership/GTM",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Sam Nelson",
+      "linkedin_url": "https://www.linkedin.com/in/realsamnelson/",
+      "headline_or_company": "Founder, SDRLeader.com",
+      "why_popular": "SDR leadership",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Jim Keenan",
+      "linkedin_url": "https://www.linkedin.com/in/jimkeenan/",
+      "headline_or_company": "CEO, A Sales Growth Company",
+      "why_popular": "Gap Selling author",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Mark Hunter",
+      "linkedin_url": "https://www.linkedin.com/in/markhunter/",
+      "headline_or_company": "The Sales Hunter",
+      "why_popular": "Prospecting speaker/trainer",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Kevin Gaither",
+      "linkedin_url": "https://www.linkedin.com/in/kevingaither/",
+      "headline_or_company": "CRO and Founder, Inside Sales Expert",
+      "why_popular": "Inside sales coaching",
+      "location_confidence": "high",
+      "source": "https://www.demandbase.com/blog/top-b2b-sales-influencers-2025/"
+    },
+    {
+      "name": "Tomasz Tunguz",
+      "linkedin_url": "https://www.linkedin.com/in/tomasztunguz/",
+      "headline_or_company": "GP, Theory Ventures",
+      "why_popular": "SaaS/GTM data and benchmarks",
+      "location_confidence": "high",
+      "source": "https://www.copy.ai/blog/go-to-market-ai-leaders-to-follow-on-linkedin"
+    },
+    {
+      "name": "Belal Batrawy",
+      "linkedin_url": "",
+      "headline_or_company": "Founder, Death 2 Fluff; GTM advisor",
+      "why_popular": "Outbound messaging",
+      "location_confidence": "low",
+      "source": "https://www.salesforge.ai/blog/top-sales-influencers-on-linkedin"
+    },
+    {
+      "name": "Anthony Iannarino",
+      "linkedin_url": "",
+      "headline_or_company": "Sales author/speaker",
+      "why_popular": "Consultative B2B selling",
+      "location_confidence": "high",
+      "source": "https://www.salesforge.ai/blog/top-sales-influencers-on-linkedin"
+    },
+    {
+      "name": "Evan Hughes",
+      "linkedin_url": "",
+      "headline_or_company": "VP Marketing, Refine Labs",
+      "why_popular": "Favikon US growth marketing top 10; demand gen",
+      "location_confidence": "low",
+      "source": "https://www.favikon.com/blog/top-growth-marketing-experts-us"
+    }
+  ],
+  "pmm": [
+    {
+      "name": "Emma Stratton",
+      "linkedin_url": "https://www.linkedin.com/in/emma-stratton-punchy/",
+      "headline_or_company": "Founder, Punchy; author Make It Punchy",
+      "why_popular": "B2B messaging; Better Messaging podcast",
+      "location_confidence": "high",
+      "source": "https://podcasts.apple.com/us/podcast/id1896840488"
+    },
+    {
+      "name": "Anthony Pierri",
+      "linkedin_url": "https://www.linkedin.com/in/anthonypierri/",
+      "headline_or_company": "Co-founder, FletchPMM",
+      "why_popular": "Positioning/homepage messaging teardowns; Favikon #3 PMM",
+      "location_confidence": "low",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Robert Kaminski",
+      "linkedin_url": "https://www.linkedin.com/in/heyrobk/",
+      "headline_or_company": "Co-founder, FletchPMM",
+      "why_popular": "Positioning for startups; Exit Five top 25",
+      "location_confidence": "low",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Yi Lin Pei",
+      "linkedin_url": "https://www.linkedin.com/in/yilinpei/",
+      "headline_or_company": "Founder, Courageous Careers; PMM advisor",
+      "why_popular": "PMM careers/coaching; Favikon PMM top 20",
+      "location_confidence": "high",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Hattie the PMM",
+      "linkedin_url": "https://www.linkedin.com/in/hattiethepmm/",
+      "headline_or_company": "Founder, productmarketers.com",
+      "why_popular": "PMM personal brand creator (~38k followers)",
+      "location_confidence": "low",
+      "source": "https://productmarketingadventures.transistor.fm/episodes/evangelize-your-value-like-hatti-the-pmm"
+    },
+    {
+      "name": "Elle Grossenbacher",
+      "linkedin_url": "https://www.linkedin.com/in/elle3izabeth/",
+      "headline_or_company": "PMM leader (Cisco); host Product Marketing Adventures",
+      "why_popular": "PMA top 100; PMM podcast",
+      "location_confidence": "high",
+      "source": "https://unbound.hubspot.com/speakers/elle-grossenbacher"
+    },
+    {
+      "name": "Andy Raskin",
+      "linkedin_url": "https://www.linkedin.com/in/andyraskin/",
+      "headline_or_company": "Strategic narrative advisor",
+      "why_popular": "Strategic narrative/positioning",
+      "location_confidence": "high",
+      "source": "https://www.lennysnewsletter.com/p/the-power-of-strategic-narrative"
+    },
+    {
+      "name": "Martina Lauchengco",
+      "linkedin_url": "https://www.linkedin.com/in/martinalauchengco/",
+      "headline_or_company": "Partner, Costanoa Ventures; SVPG; author LOVED",
+      "why_popular": "Tech product marketing fundamentals",
+      "location_confidence": "high",
+      "source": "https://funginstitute.berkeley.edu/people/martina-lauchengco/"
+    },
+    {
+      "name": "Div Manickam",
+      "linkedin_url": "https://www.linkedin.com/in/divmanickam/",
+      "headline_or_company": "Product marketing leader; author",
+      "why_popular": "PMA Top 100 six years running",
+      "location_confidence": "high",
+      "source": "https://mentorcruise.com/blog/div-manickam-2d6a2/"
+    },
+    {
+      "name": "Ashley Faus",
+      "linkedin_url": "https://www.linkedin.com/in/ashleyfaus/",
+      "headline_or_company": "Head of Lifecycle Marketing, Atlassian; author Human-Centered Brand",
+      "why_popular": "PMA top 100; content/brand strategy",
+      "location_confidence": "high",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Dave Gerhardt",
+      "linkedin_url": "https://www.linkedin.com/in/davegerhardt/",
+      "headline_or_company": "Founder & CEO, Exit Five",
+      "why_popular": "B2B marketing community; ex-Drift PMM/CMO",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Emily Kramer",
+      "linkedin_url": "https://www.linkedin.com/in/emilykramer/",
+      "headline_or_company": "Co-founder, MKT1",
+      "why_popular": "B2B marketing/PMM frameworks",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Jess Cook",
+      "linkedin_url": "https://www.linkedin.com/in/jesscook-contentmarketing/",
+      "headline_or_company": "Head of Content & Comms; co-host That's Marketing, Baby",
+      "why_popular": "B2B content marketing",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Amanda Natividad",
+      "linkedin_url": "https://www.linkedin.com/in/amandanat/",
+      "headline_or_company": "VP Marketing, SparkToro",
+      "why_popular": "Zero-click content, audience research",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Andy Crestodina",
+      "linkedin_url": "https://www.linkedin.com/in/andycrestodina/",
+      "headline_or_company": "Co-founder & CMO, Orbit Media",
+      "why_popular": "B2B content and web marketing (Chicago)",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Rand Fishkin",
+      "linkedin_url": "https://www.linkedin.com/in/randfishkin/",
+      "headline_or_company": "Co-founder, SparkToro",
+      "why_popular": "Audience research, marketing commentary",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Tas Bober",
+      "linkedin_url": "https://www.linkedin.com/in/tasbober/",
+      "headline_or_company": "Founder, Delphinium Solutions",
+      "why_popular": "B2B website conversion/messaging",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Lashay Lewis",
+      "linkedin_url": "https://www.linkedin.com/in/lashaylewis/",
+      "headline_or_company": "Founder, Authority Plug",
+      "why_popular": "Content-led SEO for B2B",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Jason Oakley",
+      "linkedin_url": "https://www.linkedin.com/in/oakleyjason/",
+      "headline_or_company": "Founder, ProductivePMM",
+      "why_popular": "PMM, positioning and messaging advice",
+      "location_confidence": "low",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Garrett Jestice",
+      "linkedin_url": "",
+      "headline_or_company": "Founder, Prelude Marketing",
+      "why_popular": "GTM/PMM for B2B startups; Favikon US product marketers",
+      "location_confidence": "high",
+      "source": "https://favikon.com/blog/top-product-marketers-us"
+    },
+    {
+      "name": "Christopher Lochhead",
+      "linkedin_url": "",
+      "headline_or_company": "Co-author Play Bigger / Niche Down; Category Pirates",
+      "why_popular": "Category design",
+      "location_confidence": "high",
+      "source": "https://echai.ventures/explore/voices/christopher-lochhead"
+    },
+    {
+      "name": "Drew Giovannoli",
+      "linkedin_url": "",
+      "headline_or_company": "Founder, Buried Wins",
+      "why_popular": "Win/loss and competitive intel for PMMs; PMA top 100",
+      "location_confidence": "high",
+      "source": "https://www.productmarketingalliance.com/top-100-product-marketing-influencers-2025/"
+    },
+    {
+      "name": "Chelsea Castle",
+      "linkedin_url": "https://www.linkedin.com/in/chelseacastle/",
+      "headline_or_company": "Brand & content leader (ex Lavender, Chili Piper)",
+      "why_popular": "B2B brand/content",
+      "location_confidence": "high",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Natalie Marcotullio",
+      "linkedin_url": "https://www.linkedin.com/in/natalie-marcotullio/",
+      "headline_or_company": "B2B marketer (ex Navattic)",
+      "why_popular": "Product-led content, Exit Five top 25",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Corrina Owens",
+      "linkedin_url": "https://www.linkedin.com/in/corrina-owens/",
+      "headline_or_company": "ABM leader; co-host Direct by Motion",
+      "why_popular": "ABM and B2B marketing",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Devin Reed",
+      "linkedin_url": "https://www.linkedin.com/in/devinreed/",
+      "headline_or_company": "Founder, The Reeder (ex Gong, Clari)",
+      "why_popular": "B2B content strategy",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Mark Huber",
+      "linkedin_url": "https://www.linkedin.com/in/markehuber/",
+      "headline_or_company": "VP Marketing",
+      "why_popular": "B2B brand/content",
+      "location_confidence": "high",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Kyle Lacy",
+      "linkedin_url": "",
+      "headline_or_company": "CMO, Jellyfish (ex Lessonly, OpenView)",
+      "why_popular": "B2B marketing leadership; Favikon US top 5",
+      "location_confidence": "high",
+      "source": "https://www.favikon.com/blog/top-growth-marketing-experts-us"
+    },
+    {
+      "name": "Lee Odden",
+      "linkedin_url": "https://www.linkedin.com/in/leeodden/",
+      "headline_or_company": "Co-founder, TopRank Marketing",
+      "why_popular": "B2B influencer/content marketing",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Ross Hudgens",
+      "linkedin_url": "https://www.linkedin.com/in/rosshudgens/",
+      "headline_or_company": "CEO, Siege Media",
+      "why_popular": "Content marketing/SEO",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Matt Lerner",
+      "linkedin_url": "",
+      "headline_or_company": "Founder, SYSTM",
+      "why_popular": "Growth messaging and positioning; Favikon US #3",
+      "location_confidence": "high",
+      "source": "https://www.favikon.com/blog/top-growth-marketing-experts-us"
+    },
+    {
+      "name": "Mary Sheehan",
+      "linkedin_url": "",
+      "headline_or_company": "Group Manager, Product Marketing, Adobe",
+      "why_popular": "PMA Top 100 PMM",
+      "location_confidence": "low",
+      "source": "https://www.productmarketingalliance.com/top-100-product-marketing-influencers-2025/"
+    },
+    {
+      "name": "Ali Hanyaloglu",
+      "linkedin_url": "",
+      "headline_or_company": "VP Product Marketing",
+      "why_popular": "PMA Top 100 PMM",
+      "location_confidence": "low",
+      "source": "https://www.productmarketingalliance.com/top-100-product-marketing-influencers-2025/"
+    },
+    {
+      "name": "Zach Messler",
+      "linkedin_url": "",
+      "headline_or_company": "Messaging consultant/founder",
+      "why_popular": "PMA Top 100 PMM, messaging",
+      "location_confidence": "low",
+      "source": "https://www.productmarketingalliance.com/top-100-product-marketing-influencers-2025/"
+    },
+    {
+      "name": "Madison Leonard",
+      "linkedin_url": "https://www.linkedin.com/in/madisonleonard/",
+      "headline_or_company": "Marketing & GTM Consultant, SaaS Secrets",
+      "why_popular": "B2B SaaS marketing",
+      "location_confidence": "low",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Christina Le",
+      "linkedin_url": "https://www.linkedin.com/in/thesechapters/",
+      "headline_or_company": "B2B marketer",
+      "why_popular": "Exit Five top 25 B2B voices",
+      "location_confidence": "low",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Meisha Patterson",
+      "linkedin_url": "https://www.linkedin.com/in/marketingmeisha/",
+      "headline_or_company": "B2B marketer",
+      "why_popular": "Exit Five top 25 B2B voices",
+      "location_confidence": "low",
+      "source": "https://exitfive.com/?p=2568"
+    },
+    {
+      "name": "Mary Keough",
+      "linkedin_url": "https://www.linkedin.com/in/mary-keough-437824a2/",
+      "headline_or_company": "Director of Product & Content Marketing, CoLab",
+      "why_popular": "PMM/content",
+      "location_confidence": "low",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Liam Moroney",
+      "linkedin_url": "",
+      "headline_or_company": "Co-founder & CEO, Storybook Marketing",
+      "why_popular": "B2B storytelling; Favikon US top 20",
+      "location_confidence": "low",
+      "source": "https://www.favikon.com/blog/top-growth-marketing-experts-us"
+    },
+    {
+      "name": "Neal Schaffer",
+      "linkedin_url": "https://www.linkedin.com/in/nealschaffer/",
+      "headline_or_company": "Fractional CMO",
+      "why_popular": "Social/content marketing",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Peter Caputa",
+      "linkedin_url": "https://www.linkedin.com/in/pc4media/",
+      "headline_or_company": "CEO, Databox",
+      "why_popular": "B2B marketing/data content",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Tom Shapiro",
+      "linkedin_url": "https://www.linkedin.com/in/tomshapiro/",
+      "headline_or_company": "CEO, Stratabeat",
+      "why_popular": "B2B brand positioning",
+      "location_confidence": "high",
+      "source": "https://clutch.co/resources/top-b2b-digital-marketing-influencers-2025"
+    },
+    {
+      "name": "Brianna Doe",
+      "linkedin_url": "https://www.linkedin.com/in/brianna-doe/",
+      "headline_or_company": "CMO, Verbatim",
+      "why_popular": "B2B content marketing",
+      "location_confidence": "low",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Kerry Guard",
+      "linkedin_url": "https://www.linkedin.com/in/kerryguard/",
+      "headline_or_company": "CEO, MKG Marketing",
+      "why_popular": "B2B tech marketing",
+      "location_confidence": "low",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    },
+    {
+      "name": "Jayde I. Powell",
+      "linkedin_url": "https://www.linkedin.com/in/jaydeipowell/",
+      "headline_or_company": "Founder, The Em Dash Co.",
+      "why_popular": "Brand/creative content",
+      "location_confidence": "low",
+      "source": "https://howdygo.com/blog/marketing-linkedin-influencers-you-should-follow"
+    }
+  ]
+}

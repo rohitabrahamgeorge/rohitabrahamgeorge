@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="{{ASSETS}}/templates/brand.css">
+<style>
+  .reveal { opacity: .12; transition: none; }
+  .reveal.on { opacity: 1; }
+  .step.reveal.on.last { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 10px 30px rgba(255,79,23,.35); }
+  .step.reveal.on.last .mono, .step.reveal.on.last span { color: #FFE3D8; }
+</style>
+</head>
+<body data-w="1080" data-h="1350">
+  <!-- Sample GIF layout. Use when the ORIGINAL post used a GIF. Contract for render.py:
+       window.FRAMES (count), window.setFrame(i) (sync), optional FRAME_MS / HOLD_LAST_MS. -->
+  <h1 class="title sm">How a launch post<br><em>earns its reach</em></h1>
+  <p class="dek">Each frame lights the next step. <b>Keep it to 4 to 7 frames.</b></p>
+
+  <div class="card" style="margin-top:30px">
+    <div class="hd"><div class="ic">⟲</div><span class="num">01</span><h3>The loop</h3><span class="meta">every launch</span></div>
+    <div class="bd">
+      <div class="steps">
+        <div class="step reveal" data-f="1"><span class="mono">step a</span><b>Draft</b><span>one buyer, one pain</span></div><div class="arrow reveal" data-f="2">→</div>
+        <div class="step reveal" data-f="2"><span class="mono">step b</span><b>Proof</b><span>a real number</span></div><div class="arrow reveal" data-f="3">→</div>
+        <div class="step reveal" data-f="3"><span class="mono">step c</span><b>Seed</b><span>10 peers comment</span></div><div class="arrow reveal" data-f="4">→</div>
+        <div class="step reveal" data-f="4"><span class="mono">step d</span><b>Reach</b><span>feed picks it up</span></div>
+      </div>
+      <div class="dashed reveal" data-f="5"></div>
+      <p class="mono reveal" data-f="5" style="text-align:center;color:var(--accent)">repeat for every launch, same week</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img src="{{ASSETS}}/headshot.jpg" alt="">
+    <div><b>{{NAME}}</b><span class="mono">{{TITLE}}</span></div>
+  </div>
+<script>
+  window.FRAMES = 6; window.FRAME_MS = 800; window.HOLD_LAST_MS = 2400;
+  window.setFrame = i => {
+    document.querySelectorAll('.reveal').forEach(el => {
+      const f = +el.dataset.f; el.classList.toggle('on', f <= i); el.classList.toggle('last', f === Math.min(i, 4) && el.classList.contains('step'));
+    });
+  };
+  window.setFrame(window.FRAMES - 1);
+</script>
+</body></html>

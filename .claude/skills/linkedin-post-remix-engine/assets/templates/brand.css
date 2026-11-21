@@ -1,0 +1,87 @@
+/* Rohit Abraham George / Edbound AI brand kit.
+   Taken from the "LinkedIn Feed Rewire Learning Playbook" reference (assets/brand-reference.png):
+   warm cream canvas, near-black ink, one hot orange accent, rounded white cards with
+   tinted header strips, numbered mono labels, dashed orange connectors, headshot footer. */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=block');
+
+:root {
+  --bg: #F6F1EA;
+  --card: #FFFFFF;
+  --tint: #FCEDE6;      /* warm header strip */
+  --tint-cool: #EEF0EE; /* cool header strip, use for every other section */
+  --ink: #1D1A17;
+  --muted: #77706A;
+  --line: #E8DED4;
+  --accent: #FF4F17;
+  --accent-soft: #FF8A5C;
+  --display: 'Bricolage Grotesque', 'Inter', sans-serif;
+  --body: 'Inter', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); padding: 44px 44px 0; overflow: hidden; position: relative; }
+
+/* headline: black lead words, orange gradient emphasis */
+.title { font-family: var(--display); font-weight: 800; font-size: 76px; line-height: .98; letter-spacing: -2.5px; }
+.title em { font-style: normal; background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 55%, var(--accent-soft) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.title.sm { font-size: 58px; letter-spacing: -1.8px; }
+.dek { margin-top: 18px; font-size: 21px; line-height: 1.4; color: var(--muted); max-width: 900px; }
+.dek b { color: var(--ink); font-weight: 600; }
+
+/* grid + cards */
+.grid { display: grid; gap: 16px; margin-top: 26px; }
+.g2 { grid-template-columns: 1fr 1fr; }
+.card { background: var(--card); border: 1.5px solid var(--line); border-radius: 18px; overflow: hidden; }
+.card .hd { display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--tint); border-bottom: 1.5px solid var(--line); }
+.card.cool .hd { background: var(--tint-cool); }
+.card .hd .ic { width: 32px; height: 32px; border-radius: 9px; background: #fff; display: grid; place-items: center; color: var(--accent); font-weight: 800; font-size: 18px; }
+.card .hd .num { font-family: var(--mono); color: var(--accent); font-weight: 700; font-size: 17px; }
+.card .hd h3 { font-family: var(--display); font-weight: 700; font-size: 24px; letter-spacing: -.4px; }
+.card .hd .meta { margin-left: auto; font-family: var(--mono); font-size: 14px; color: var(--muted); }
+.card .bd { padding: 18px 20px 20px; }
+.note { font-size: 15.5px; line-height: 1.45; color: var(--muted); margin-top: 14px; }
+.note b { color: var(--ink); font-weight: 600; }
+.mono { font-family: var(--mono); font-size: 14px; color: var(--muted); letter-spacing: .2px; }
+
+/* dark prompt / quote box */
+.dark { background: var(--ink); color: #fff; border-radius: 14px; padding: 16px 18px; }
+.dark .mono { color: #B9B2AB; }
+.dark p { font-weight: 700; font-size: 19px; line-height: 1.35; margin-top: 6px; }
+
+/* chips */
+.chips { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.chip { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 12px; background: #FBF8F5; font-weight: 600; font-size: 16px; }
+.chip::before { content: ''; width: 18px; height: 18px; border-radius: 50%; background: #D9D3CD; flex: none; }
+.chip.on { border-color: var(--accent); background: #fff; box-shadow: 0 0 0 3px rgba(255, 79, 23, .12); }
+.chip.on::before { background: var(--accent); }
+.chip.off { color: #A49C95; text-decoration: line-through; }
+
+/* pipeline steps */
+.steps { display: flex; align-items: center; gap: 10px; }
+.step { flex: 1; text-align: center; padding: 16px 10px; border: 1.5px solid var(--line); border-radius: 14px; background: #FBF8F5; }
+.step .mono { font-size: 12px; }
+.step b { display: block; font-family: var(--display); font-size: 21px; margin: 4px 0; }
+.step span { font-size: 13.5px; color: var(--muted); }
+.step.hot { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 10px 30px rgba(255, 79, 23, .35); }
+.step.hot .mono, .step.hot span { color: #FFE3D8; }
+.arrow { color: var(--accent); font-size: 22px; font-weight: 700; }
+.dashed { border-top: 2px dashed var(--accent); margin: 14px 0 6px; position: relative; }
+
+/* stat bars */
+.bar { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 14px; margin: 12px 0; }
+.bar .lbl b { display: block; font-size: 16px; }
+.bar .track { height: 26px; border-radius: 8px; background: #F1ECE7; overflow: hidden; }
+.bar .fill { height: 100%; border-radius: 8px; background: var(--ink); color: #fff; font-family: var(--mono); font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; }
+.bar .fill.hot { background: linear-gradient(90deg, var(--accent), var(--accent-soft)); }
+
+/* big number tile */
+.big { background: var(--ink); color: #fff; border-radius: 14px; padding: 14px 18px; }
+.big b { font-family: var(--display); font-size: 44px; display: block; line-height: 1; }
+.big span { font-size: 14px; color: #CFC8C1; }
+
+/* footer: headshot with orange ring, name, mono title */
+.footer { position: absolute; left: 44px; right: 44px; bottom: 0; height: 104px; border-top: 1.5px solid var(--line); display: flex; align-items: center; gap: 16px; }
+.footer img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); }
+.footer b { font-family: var(--display); font-size: 21px; display: block; }
+.footer .mono { font-size: 15px; }

@@ -1,0 +1,58 @@
+{
+  "owner": {
+    "name": "Rohit Abraham George",
+    "title": "Content Marketing and GTM, Edbound AI",
+    "secondary_line": "Content Hub GTM",
+    "company": "Edbound AI",
+    "linkedin_url": "",
+    "headshot": "assets/headshot.jpg"
+  },
+  "schedule": {
+    "days": ["Sunday", "Wednesday", "Friday"],
+    "timezone": "Asia/Kolkata"
+  },
+  "roster": {
+    "per_category": 30,
+    "categories": {
+      "gtm": "US-based GTM experts: go-to-market, PLG/SLG, RevOps, demand gen, outbound, founder-led sales, B2B growth",
+      "pmm": "US-based product marketing experts: positioning, messaging, launches, PMM leadership, content-led B2B marketing"
+    },
+    "country_must_contain": ["United States", "USA", "US"],
+    "min_followers": 10000,
+    "min_posts_last_30_days": 4,
+    "refresh_every_days": 30,
+    "exclude_names": ["Elena Verna", "Kyle Poyar"]
+  },
+  "scrape": {
+    "window_days": 30,
+    "max_posts_per_profile": 40,
+    "self_window": "6months",
+    "posts_actor": "harvestapi~linkedin-profile-posts",
+    "profile_actor": "harvestapi~linkedin-profile-scraper",
+    "include_reposts": false
+  },
+  "engagement_weights": {"likes": 1, "comments": 3, "shares": 5},
+  "picks": {
+    "count": 5,
+    "max_per_author": 1,
+    "skip_media_types": ["video"],
+    "similarity_threshold": 0.35
+  },
+  "brand": {
+    "bg": "#F6F1EA",
+    "card": "#FFFFFF",
+    "card_tint": "#FCEDE6",
+    "card_tint_cool": "#EEF0EE",
+    "ink": "#1D1A17",
+    "muted": "#77706A",
+    "line": "#E8DED4",
+    "accent": "#FF4F17",
+    "accent_soft": "#FF8A5C",
+    "font_display": "Bricolage Grotesque",
+    "font_body": "Inter",
+    "font_mono": "JetBrains Mono",
+    "canvas": [1080, 1350]
+  },
+  "data_branch": "ccr-037db276-kmixql",
+  "data_dir": "linkedin-remix"
+}
