@@ -1,11 +1,11 @@
-"""One command for your computer: pull, collect, push. Scheduled for Sun/Wed/Fri before the cloud run.
+"""One command for your computer: pull, collect, push. Scheduled for Mon/Wed/Fri at 9:40 AM, before the cloud run.
 
   python run.py            # normal run
   python run.py --debug    # save HTML/screenshots for profiles where 0 posts were found
 
 Steps: git pull the data branch -> refresh the roster on your machine when due (monthly) ->
 collect expert posts and your own posts -> commit and push linkedin-remix/ so the cloud
-routine (9:36 AM IST) picks them up.
+routine (10:30 AM IST) picks them up.
 """
 import json
 import os

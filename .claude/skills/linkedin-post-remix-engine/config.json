@@ -8,7 +8,9 @@
     "headshot": "assets/headshot.jpg"
   },
   "schedule": {
-    "days": ["Sunday", "Wednesday", "Friday"],
+    "days": ["Monday", "Wednesday", "Friday"],
+    "collector_time": "09:40",
+    "cloud_time": "10:30",
     "timezone": "Asia/Kolkata"
   },
   "roster": {
