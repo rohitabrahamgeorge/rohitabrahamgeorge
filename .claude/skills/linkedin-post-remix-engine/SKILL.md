@@ -30,16 +30,20 @@ Paths below are relative to this skill folder (`SKILL`). State lives in the repo
    session was started on a different branch, check out the data branch anyway; the scheduled
    task's prompt authorizes committing and pushing state to it.
 2. Pick the Apify path. Two ways to run the actors, same inputs either way:
-   - **Connector (default).** If the Apify MCP connector's tools are loaded (ToolSearch
-     "apify"), run each actor with it (`call-actor`, then `get-dataset-items`, paging until
-     done), save all items to a JSON file, and run the script with `APIFY_ITEMS=<that file>`
-     set. To get the exact actor and input a step needs, run the script with `APIFY_DRY=1`.
-     On the connector path, bench people promoted mid-run are scraped on the next run. Actors:
-     `harvestapi/linkedin-profile-posts` (posts), `harvestapi/linkedin-profile-scraper`
-     (roster verify), `harvestapi/linkedin-profile-search-by-name` (URL resolve).
-   - **REST.** `curl -s -H "Authorization: Bearer proxy-injected" https://api.apify.com/v2/users/me`.
-     If it returns your user, a token is saved for `api.apify.com` and the scripts call Apify
-     directly. Do not ask for a token: Rohit declined the credential form on 2026-11-21.
+   - **REST (default).** Rohit has an Apify free-plan account; its token is saved as a
+     network secret for `api.apify.com`, so the scripts call Apify directly. Check with
+     `curl -s -H "Authorization: Bearer proxy-injected" https://api.apify.com/v2/users/me`.
+     Free plan = $5 of usage a month; check `.../v2/users/me/limits` and warn him if the month
+     is above 80 percent before scraping. If it returns 401, ask once with `request_credential`
+     (host `api.apify.com`): the token may have been rotated.
+   - **Connector (fallback).** If REST fails and the Apify MCP connector's tools are loaded
+     (ToolSearch "apify"), run each actor with it (`call-actor`, then `get-dataset-items`,
+     paging until done), save all items to a JSON file, and run the script with
+     `APIFY_ITEMS=<that file>`. Run a script with `APIFY_DRY=1` to print the exact actor and
+     input it needs. Bench people promoted mid-run are then scraped on the next run.
+   Actors: `harvestapi/linkedin-profile-posts` (posts), `harvestapi/linkedin-profile-scraper`
+   (roster verify), `harvestapi/linkedin-profile-search-by-name` (URL resolve).
+   Never scrape LinkedIn profile pages with the browser or work around LinkedIn's login wall.
    If neither works, stop after Phase 1 discovery, tell him the Apify connector needs
    reconnecting in claude.ai connector settings, and save state.
 3. Load the voice and anti-slop skills before writing anything. Use the Skill tool for
