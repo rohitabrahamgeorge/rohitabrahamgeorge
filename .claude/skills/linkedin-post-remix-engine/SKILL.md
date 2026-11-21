@@ -23,29 +23,29 @@ Paths below are relative to this skill folder (`SKILL`). State lives in the repo
 `linkedin-remix/data/` and each run's output in `linkedin-remix/runs/<YYYY-MM-DD>/`.
 `config.json` holds the owner profile, brand tokens, roster rules, weights and pick rules.
 
+## How the data gets in
+
+LinkedIn needs a login to show anyone's recent posts, and this routine never logs in from
+the cloud or works around LinkedIn's sign-in wall. So scraping happens on Rohit's own
+computer: `local/run.py` (Playwright driving a separate Brave profile he logged into himself)
+runs Sunday, Wednesday and Friday at about 8:40 AM IST, reads the roster's activity pages and
+his own, and pushes `linkedin-remix/data/collected/` to the data branch. The cloud run at
+9:36 AM IST picks it up. Setup for his computer: `local/SETUP.md`.
+
+No Apify. Rohit has no Apify access; the Apify code paths in the scripts are dormant.
+
 ## Phase 0. Setup (no questions, run straight through)
 
 1. Make sure you are on the data branch named in `config.json -> data_branch` with the latest
    state: `git fetch origin <branch> && git checkout <branch> && git pull --ff-only`. If the
    session was started on a different branch, check out the data branch anyway; the scheduled
    task's prompt authorizes committing and pushing state to it.
-2. Pick the Apify path. Two ways to run the actors, same inputs either way:
-   - **REST (default).** Rohit has an Apify free-plan account; its token is saved as a
-     network secret for `api.apify.com`, so the scripts call Apify directly. Check with
-     `curl -s -H "Authorization: Bearer proxy-injected" https://api.apify.com/v2/users/me`.
-     Free plan = $5 of usage a month; check `.../v2/users/me/limits` and warn him if the month
-     is above 80 percent before scraping. If it returns 401, ask once with `request_credential`
-     (host `api.apify.com`): the token may have been rotated.
-   - **Connector (fallback).** If REST fails and the Apify MCP connector's tools are loaded
-     (ToolSearch "apify"), run each actor with it (`call-actor`, then `get-dataset-items`,
-     paging until done), save all items to a JSON file, and run the script with
-     `APIFY_ITEMS=<that file>`. Run a script with `APIFY_DRY=1` to print the exact actor and
-     input it needs. Bench people promoted mid-run are then scraped on the next run.
-   Actors: `harvestapi/linkedin-profile-posts` (posts), `harvestapi/linkedin-profile-scraper`
-   (roster verify), `harvestapi/linkedin-profile-search-by-name` (URL resolve).
-   Never scrape LinkedIn profile pages with the browser or work around LinkedIn's login wall.
-   If neither works, stop after Phase 1 discovery, tell him the Apify connector needs
-   reconnecting in claude.ai connector settings, and save state.
+2. Read `linkedin-remix/data/collected/latest.json`. Fresh means `collected_at` is within the
+   last 20 hours. If it is stale or missing, the collector did not run (computer asleep, app
+   closed, or LinkedIn asked him to log in again). Say so in one line at the top of the run,
+   with the fix ("open the Claude desktop app and run the collector, or run
+   `python local/run.py`"), then carry on with the posts already on file.
+   If `failed` lists people, mention the count.
 3. Load the voice and anti-slop skills before writing anything. Use the Skill tool for
    `anthropic-skills:kinner-voice`, `anthropic-skills:kinner-comment-engine` and
    `anthropic-skills:kinner-commenting-skill` (or read their SKILL.md files under
@@ -53,38 +53,40 @@ Paths below are relative to this skill folder (`SKILL`). State lives in the repo
    the parts that matter here.
 4. `pip install openpyxl pillow playwright` only if an import fails. Chromium is already
    running (repo CLAUDE.md); `scripts/render.py` attaches to it.
+5. Never scrape LinkedIn profile or activity pages from the cloud, never log into LinkedIn,
+   and never work around its sign-in wall. Opening a handful of single public post pages
+   (`scripts/li_public.py`) is fine; stop if LinkedIn walls it.
 
 ## Phase 1. Roster: the 30 + 30 experts
 
-Run `python scripts/roster.py status`. Refresh only when it says NEEDED (missing, older than
-30 days, or fewer than 30 active in a category).
+Run `python scripts/roster.py status`.
+- If it says NEEDED and `linkedin-remix/data/candidates.json` is older than 30 days, refresh
+  the candidate list: about 45 per category from web search (Favikon and similar creator
+  rankings, "top GTM voices", "top product marketing creators", Exit Five, PMA, Pavilion,
+  podcasts, newsletters). Shape: `{"gtm":[...],"pmm":[...]}`, each `{name, linkedin_url,
+  headline_or_company, why_popular, source}`. US-based only. Never add anyone in
+  `config.json -> roster.exclude_names` (Elena Verna, Kyle Poyar). Keep people already on the
+  roster unless they went inactive. Never invent a LinkedIn URL.
+- Verification (US location, follower floor, not excluded, top 30 per category by followers,
+  the rest on the bench) runs on his computer: `local/run.py` sees the roster is due, reads
+  each candidate's profile, and runs `roster.py verify-local`. If `roster.json` is missing in
+  the cloud run, the collector has not done its first run yet: stop after saving
+  candidates.json and tell him to run `python local/run.py` once.
+- Posting activity is enforced in Phase 2: anyone with fewer than 4 posts in 30 days is
+  swapped for the best bench person (the collector also reads 6 bench people each run).
 
-To refresh:
-1. Discover. Update `linkedin-remix/data/candidates.json` (shape: `{"gtm":[...],"pmm":[...]}`,
-   each `{name, linkedin_url, headline_or_company, why_popular, source}`) with about 45
-   candidates per category using web search: Favikon and similar creator rankings, "top GTM
-   voices", "top product marketing creators", Exit Five, PMA, Pavilion, podcasts and
-   newsletters. US-based only. Never add anyone in `config.json -> roster.exclude_names`
-   (Elena Verna, Kyle Poyar). Keep anyone already on the roster unless they went inactive.
-   Never invent a LinkedIn URL: leave it empty if you did not see it.
-2. `python scripts/roster.py resolve` fills missing URLs by name search.
-3. `python scripts/roster.py verify` checks each profile: US location, follower floor, not
-   excluded. Top 30 per category by followers go on the roster, the rest sit on the bench.
-   Posting activity is enforced in Phase 2: anyone with fewer than 4 posts in 30 days is
-   swapped for the best bench person.
+## Phase 2. Load the collected posts
 
-## Phase 2. Scrape
-
-1. `python scripts/scrape.py experts` pulls every roster expert's posts (a month on the first
-   run, then a week merged into the 30-day table, which keeps Apify cost down). Each post
-   stores: hook (the lines above "see more"), full text, visual type (text, image,
-   multi-image, gif, carousel, video, article, poll) and links, likes, comments, shares,
-   engagement score, URL.
-2. `python scripts/scrape.py self` pulls Rohit's own posts. If it exits with
-   `SELF_URL_MISSING`, find his profile URL (web search "Rohit Abraham George Edbound"), put it
-   in `config.json -> owner.linkedin_url`, and rerun. If you cannot find it, ask him once at the
-   start of Phase 5 and keep going without the self-check meanwhile (the ledger still stops
-   repeats).
+1. `APIFY_ITEMS=linkedin-remix/data/collected/experts-<date>.json python scripts/scrape.py experts`
+   (use the newest experts file). This merges the posts into the 30-day table and applies the
+   activity swap. Each post has: hook (the lines above "see more"), full text, visual type
+   (text, image, multi-image, gif, carousel, video, poll) and image links, likes, comments,
+   reposts, engagement score, URL.
+2. `APIFY_ITEMS=linkedin-remix/data/collected/self-<date>.json python scripts/scrape.py self`
+   for his own posts (skip if no self file). The collector fills `owner.linkedin_url` in
+   `config.json` itself on its first run.
+3. If a post in the table has no text or counts (rare DOM misses), it is fine to fill it from
+   its public page with `scripts/li_public.py read <urls.txt>`, only for a handful of posts.
 
 ## Phase 3. Sync and the Excel swipe file
 
@@ -95,7 +97,7 @@ To refresh:
    score), Experts, My Posts, Remix Ledger, About.
 3. Send the workbook with SendUserFile (`display: attach`).
 
-Engagement score = likes x1 + comments x3 + shares x5 (`config.json -> engagement_weights`).
+Engagement score = likes x1 + comments x3 + reposts x5 (`config.json -> engagement_weights`).
 Comments and shares are weighted up because they are what LinkedIn's feed rewards.
 
 ## Phase 4. Pick the best 5 he has not used

@@ -8,6 +8,8 @@ Verification rules (config.json -> roster): US location, not excluded, follower 
 Posting activity is applied later by scrape.py (people with < min_posts_last_30_days
 are flagged 'inactive' and swapped for the next-best verified candidate).
 """
+import json
+import re
 import sys
 from datetime import datetime, timezone
 from common import CONFIG, load, save, apify_run, profile_key
@@ -116,5 +118,49 @@ def verify():
     print(f"rejected {len(rejected)} (see roster.json -> rejected)")
 
 
+def verify_local():
+    """Same rules as verify(), using profiles read on Rohit's computer by local/collect.py roster."""
+    import os
+    from common import DATA_DIR
+    src = os.path.join(DATA_DIR, "collected", "roster-profiles.json")
+    profs = json.load(open(src))["profiles"]
+    old = {profile_key(p["linkedin_url"]): p for p in load("roster.json", {}).get("experts", [])}
+    experts, rejected, seen = [], [], set()
+    for c in profs:
+        k = profile_key(c["linkedin_url"])
+        if k in seen:
+            continue
+        seen.add(k)
+        rec = {"name": c["name"], "category": c["category"], "linkedin_url": f"https://www.linkedin.com/in/{k}/",
+               "headline": c.get("headline", ""), "location": c.get("location", ""), "followers": c.get("followers", 0),
+               "active": old.get(k, {}).get("active", True)}
+        if excluded(rec["name"]):
+            rejected.append({**rec, "reason": "excluded by name"})
+        elif not any(x in rec["location"] for x in ("United States", ", US", "USA")) and not re.search(
+                r", (AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\b|Area$|Metropolitan|Bay Area",
+                rec["location"]):
+            rejected.append({**rec, "reason": f"not US ({rec['location'] or 'unknown'})"})
+        elif rec["followers"] < R["min_followers"]:
+            rejected.append({**rec, "reason": f"followers {rec['followers']} < {R['min_followers']}"})
+        else:
+            experts.append(rec)
+    _finish(experts, rejected)
+
+
+def _finish(experts, rejected):
+    final = []
+    for cat in R["categories"]:
+        group = sorted([e for e in experts if e["category"] == cat], key=lambda e: -e["followers"])
+        for i, e in enumerate(group):
+            e["tier"] = "roster" if i < R["per_category"] else "bench"
+            final.append(e)
+    save("roster.json", {"verified_at": datetime.now(timezone.utc).isoformat(), "experts": final, "rejected": rejected})
+    for cat in R["categories"]:
+        n = len([e for e in final if e["category"] == cat and e["tier"] == "roster"])
+        b = len([e for e in final if e["category"] == cat and e["tier"] == "bench"])
+        print(f"{cat}: {n} on roster, {b} on bench")
+    print(f"rejected {len(rejected)} (see roster.json -> rejected)")
+
+
 if __name__ == "__main__":
-    {"status": status, "verify": verify, "resolve": resolve}[sys.argv[1] if len(sys.argv) > 1 else "status"]()
+    {"status": status, "verify": verify, "verify-local": verify_local, "resolve": resolve}[sys.argv[1] if len(sys.argv) > 1 else "status"]()
