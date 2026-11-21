@@ -1,3 +1,7 @@
 state/screenshots/
 state/cron.log
 __pycache__/
+run.sh
+run.ps1
+state/run.log
+state/launchd.log

@@ -4,7 +4,21 @@ LinkedIn blocks cloud browsers with a Cloudflare bot check, and the AimFox API h
 posts or commenting. So this routine runs on your computer, in your own browser profile, on a schedule
 through the Claude desktop app.
 
-## One-time setup (about 10 minutes)
+## Fastest way: one command (does everything below, including the schedule)
+
+**Mac** (open Terminal and paste):
+```bash
+curl -fsSL https://raw.githubusercontent.com/rohitabrahamgeorge/rohitabrahamgeorge/claude/linkedin-engagement-automation-h7dz64/linkedin-commenter/install.sh | bash
+```
+**Windows** (open PowerShell and paste):
+```powershell
+irm https://raw.githubusercontent.com/rohitabrahamgeorge/rohitabrahamgeorge/claude/linkedin-engagement-automation-h7dz64/linkedin-commenter/install.ps1 | iex
+```
+It installs Playwright and Claude Code (if missing), opens a browser for you to log in to LinkedIn once,
+and schedules the routine for Mon/Wed/Fri 10:30 local time. On a Mac it uses launchd and can wake the
+Mac at 10:25; on Windows it uses Task Scheduler with wake-to-run. Re-running it is safe.
+
+## Manual setup (about 10 minutes)
 
 1. **Get the repo onto your computer**
    ```bash
