@@ -1,0 +1,101 @@
+id,name,role,company,region,tier,est_followers,verified_followers,linkedin_url,topics,status
+1,Morgan J Ingram,GTM & sales creator,AMP Creative,US,100k+,150k,,,outbound; video prospecting; GTM content,active
+2,Josh Braun,Sales trainer & founder,Josh Braun Sales,US,100k+,150k,,,cold email; detachment selling; outbound,active
+3,Peep Laja,Founder,Wynter,Europe (Estonia)/US,100k+,150k,,,message testing; positioning; B2B marketing,active
+4,Florin Tatulea,Sales leader & creator,Independent,Canada,100k+,120k,,,SDR leadership; outbound; cold calling,active
+5,Daniel Disney,Founder,The Daily Sales,UK,100k+,250k,,,social selling; LinkedIn for sales,active
+6,Kevin Dorsey (KD),Sales leadership coach,Independent,US,100k+,120k,,,sales management; coaching; revenue leadership,active
+7,Chris Orlob,Founder,pclub.io,US,100k+,150k,,,discovery; deal execution; sales skills,active
+8,Samantha McKenna,Founder,#samsales Consulting,US,100k+,130k,,,enterprise selling; executive outreach,active
+9,Marcus Chan,Founder,Venli Consulting,US,100k+,150k,,,B2B sales coaching; closing; quota,active
+10,John Barrows,Founder,JB Sales,US,100k+,120k,,,sales training; prospecting; AI in sales,active
+11,Alex Lieberman,Co-founder,Morning Brew / storyarb,US,100k+,150k,,,founder content; media; audience building,active
+12,Kieran Flanagan,Marketing & AI exec,HubSpot,Europe (Ireland),100k+,110k,,,AI in marketing; growth; GTM strategy,active
+13,Daniel Murray,Founder,The Marketing Millennials,US,100k+,120k,,,B2B marketing; brand; creator-led marketing,active
+14,Dan Martell,Founder,SaaS Academy,Canada,100k+,150k,,,SaaS scaling; founder productivity; hiring,active
+15,Mark Ritson,Brand strategist & professor,Mini MBA in Marketing,UK,100k+,150k,,,brand strategy; marketing effectiveness; positioning,active
+16,Scott Leese,Sales leader & founder,Scott Leese Consulting,US,100k+,100k,,,sales leadership; startup sales; scaling teams,active
+17,Ian Koniak,Sales coach,Ian Koniak Sales Coaching,US,100k+,100k,,,enterprise AE; sales mindset; pipeline,active
+18,Becc Holland,Founder,Flip the Script,US,100k+,100k,,,personalization; cold outreach; messaging,active
+19,Will Aitken,Sales creator,Independent,Canada,100k+,100k,,,SDR to AE; outbound; sales career,active
+20,Jason Bay,Founder,Outbound Squad,US,100k+,100k,,,outbound prospecting; cold calling; email,active
+21,Ross Simmonds,Founder,Foundation Marketing,Canada,100k+,100k,,,content distribution; B2B content; SEO,active
+22,Katelyn Bourgoin,Founder,Customer Camp,Canada,100k+,100k,,,buyer psychology; customer research; JTBD,active
+23,Jake Ward,Founder,Byword,UK,100k+,100k,,,content marketing; SEO; AI content,active
+24,Michel Lieben,Founder,ColdIQ,Europe,100k+,100k,,,outbound systems; Clay; sales tech stack,active
+25,Sangram Vajre,Co-founder,GTM Partners,US,100k+,100k,,,GTM strategy; ABM; GTM operating models,active
+26,Steli Efti,Founder,Close,US/Europe,100k+,100k,,,startup sales; founder-led sales; SaaS,active
+27,Belal Batrawy,Sales leader & creator,Death to Fluff,US,100k+,100k,,,messaging; cold calling; sales copy,active
+28,Jake Dunlap,Founder,Skaled,US,100k+,100k,,,sales strategy; AI in sales; RevOps,active
+29,Andrei Zinkevich,Co-founder,FullFunnel,Europe,100k+,100k,,,B2B demand gen; ABM; marketing-sales alignment,active
+30,Wes Bush,Founder,ProductLed,Canada,100k+,100k,,,product-led growth; onboarding; PLG pricing,active
+31,Leah Tharin,PLG advisor & creator,Leah's ProducTea,Europe (Switzerland),100k+,100k,,,product-led growth; growth teams; PLG + sales,active
+32,Jacco van der Kooij,Founder,Winning by Design,Europe (Netherlands)/US,100k+,100k,,,revenue architecture; bowtie model; SaaS metrics,active
+33,Gaetano DiNardi,Growth marketing advisor,Independent,US,100k+,100k,,,demand gen; SEO; B2B growth,active
+34,Anthony Pierri,Co-founder,FletchPMM,US,50k+,70k,,,positioning; homepage messaging; product marketing,active
+35,Emily Kramer,Co-founder,MKT1,US,50k+,60k,,,startup marketing; marketing teams; demand gen,active
+36,Kyle Coleman,B2B CMO,Independent,US,50k+,70k,,,AI in GTM; sales and marketing; brand,active
+37,Nate Nasralla,Co-founder,Fluint,US,50k+,60k,,,champion building; business cases; enterprise deals,active
+38,Armand Farrokh,Co-host & founder,30 Minutes to President's Club,US,50k+,70k,,,sales tactics; discovery; cold calling,active
+39,Nick Cegelski,Co-host & founder,30 Minutes to President's Club,US,50k+,60k,,,sales tactics; objection handling,active
+40,Ryan Reisert,Cold calling expert,Independent,US,50k+,50k,,,cold calling; SDR teams; phone prospecting,active
+41,Devin Reed,Founder,The Reeder,US,50k+,60k,,,content strategy; B2B content; LinkedIn,active
+42,Amanda Natividad,VP Marketing,SparkToro,US,50k+,60k,,,zero-click content; audience research,active
+43,Kevin Indig,Growth advisor,Growth Memo,Europe (Germany)/US,50k+,50k,,,SEO; AI search; growth,active
+44,Eli Schwartz,Growth advisor & author,Product-Led SEO,US,50k+,50k,,,product-led SEO; AI search; growth,active
+45,Kipp Bodnar,CMO,HubSpot,US,50k+,60k,,,B2B marketing; AI; brand and demand,active
+46,Jen Abel,GTM advisor,Independent,US,50k+,50k,,,founder-led sales; enterprise sales for startups,active
+47,Hannah Ajikawo,Founder,Revenue Funnel,UK,50k+,50k,,,EMEA GTM; revenue operations; GTM execution,active
+48,Matt Green,Chief Revenue Officer,Sales Assembly,US,50k+,50k,,,sales leadership; sales enablement,active
+49,Jared Robin,Co-founder,RevGenius,US,50k+,50k,,,GTM community; revenue careers,active
+50,Christopher Penn,Co-founder,Trust Insights,US,50k+,90k,,,marketing analytics; AI in marketing; data,active
+51,Casey Winters,Growth advisor,Independent,US,50k+,50k,,,growth loops; marketplaces; product strategy,active
+52,Ramli John,Founder,Delight Path,Canada,50k+,50k,,,user onboarding; product-led growth,active
+53,Jamie Shanks,Founder,Pipeline Signals,Canada,50k+,50k,,,social selling; signal-based selling,active
+54,Matt Heinz,Founder,Heinz Marketing,US,50k+,50k,,,B2B pipeline; demand gen; marketing ops,active
+55,Andy Crestodina,Co-founder,Orbit Media,US,50k+,50k,,,content strategy; website conversion; analytics,active
+56,Darrell Alfonso,Marketing ops leader & author,Independent,US,50k+,50k,,,marketing operations; martech; AI ops,active
+57,Richard Harris,Founder,The Harris Consulting Group,US,50k+,50k,,,sales process; discovery; sales hiring,active
+58,Aaron Ross,Author & founder,Predictable Revenue,US,50k+,50k,,,outbound systems; sales specialization,active
+59,Alex Berman,Founder,Email Upsell,US,50k+,50k,,,cold email; agency growth; outbound,active
+60,Garrett Mehrguth,CEO,Directive,US,50k+,50k,,,B2B paid media; customer-led marketing,active
+61,Jon Miller,Co-founder (Marketo/Engagio),Independent,US,50k+,50k,,,ABM; B2B marketing strategy; AI,active
+62,Scott Brinker,Martech analyst,chiefmartec,US,50k+,50k,,,martech stack; AI agents in marketing,active
+63,Rob Walling,Founder,TinySeed / MicroConf,US,50k+,50k,,,bootstrapped SaaS; founder growth,active
+64,Tim Soulo,CMO,Ahrefs,Europe,50k+,50k,,,product-led content; SEO; marketing teams,active
+65,Brian Balfour,Founder,Reforge,US,50k+,60k,,,growth strategy; AI product distribution,active
+66,Nicole Leffer,AI marketing advisor,Independent,US,50k+,50k,,,AI for marketers; marketing workflows,active
+67,Robert Kaminski,Co-founder,FletchPMM,US,10k+,30k,,,product marketing; positioning; messaging,active
+68,Andy Raskin,Strategic narrative advisor,Independent,US,10k+,30k,,,strategic narrative; pitch; positioning,active
+69,Martina Lauchengco,Partner & author (Loved),Costanoa Ventures,US,10k+,20k,,,product marketing; GTM for startups,active
+70,Richard King,Founder,Product Marketing Alliance,UK,10k+,30k,,,product marketing community; PMM careers,active
+71,Natalie Marcotullio,Head of Growth & Marketing,Navattic,US,10k+,15k,,,product marketing; interactive demos; PLG,active
+72,Nick Bennett,Founder,TACK,US,10k+,40k,,,product marketing; positioning; launches,active
+73,Jordan Crawford,Founder,Blueprint,US,10k+,30k,,,signal-based outbound; data-driven prospecting,active
+74,Asia Orangio,Founder,DemandMaven,US,10k+,20k,,,SaaS growth; customer research; churn,active
+75,Carilu Dietrich,Fractional CMO,Independent (ex-Atlassian),US,10k+,25k,,,hypergrowth marketing; CMO playbooks,active
+76,Ashley Faus,Head of Lifecycle Marketing,Atlassian,US,10k+,30k,,,thought leadership; content strategy,active
+77,Alice de Courcy,CMO,Cognism,UK,10k+,25k,,,demand gen; brand; B2B marketing,active
+78,Liam Bartholomew,Marketing leader,Cognism,UK,10k+,20k,,,demand gen; paid social; content,active
+79,Tom Hunt,Founder,Fame,UK,10k+,30k,,,B2B podcasting; content distribution,active
+80,Peter Weinberg,B2B marketing researcher,Independent (ex-LinkedIn B2B Institute),US,10k+,30k,,,marketing effectiveness; brand in B2B; research,active
+81,Jon Lombardo,B2B marketing researcher,Independent (ex-LinkedIn B2B Institute),US,10k+,40k,,,marketing effectiveness; 95-5 rule; research,active
+82,Matt Lerner,Founder,SYSTM,US,10k+,30k,,,startup growth; positioning; growth channels,active
+83,Adam Schoenfeld,Co-founder,Keyplay,US,10k+,20k,,,ICP; account scoring; ABM,active
+84,Eric Nowoslawski,Founder,Growth Engine X,US,10k+,30k,,,Clay; GTM engineering; cold email,active
+85,Andrew Capland,Founder,Delivering Growth,US,10k+,20k,,,PLG; activation; growth teams,active
+86,Hila Qu,Growth advisor,Independent (ex-GitLab),US,10k+,20k,,,PLG; growth for dev tools,active
+87,Mike Rizzo,Founder,MarketingOps.com,US,10k+,25k,,,marketing ops; ops careers,active
+88,Rosalyn Santa Elena,RevOps leader,Independent,US,10k+,30k,,,revenue operations; GTM metrics,active
+89,Corey Haines,Founder,Conversion Factory / Swipe Files,US,10k+,25k,,,SaaS marketing; conversion; AI marketing,active
+90,Ethan Smith,CEO,Graphite,US,10k+,20k,,,SEO; AI search (AEO); growth,active
+91,Ryan Law,Director of Content Marketing,Ahrefs,UK,10k+,20k,,,content marketing; AI content; SEO,active
+92,Latané Conant,CMO & author,No Forms No Spam No Cold Calls,US,10k+,30k,,,ABM; intent data; B2B marketing,active
+93,Chris Savage,Co-founder & CEO,Wistia,US,10k+,30k,,,video marketing; brand; founder lessons,active
+94,Tas Bober,Founder,Independent,UK,10k+,30k,,,website conversion; B2B CRO; messaging,active
+95,Patrick Spychalski,Co-founder,The Kiln,US,10k+,30k,,,B2B creative; pipeline; agency growth,active
+96,Christina Garnett,Audience research strategist,Independent,US,10k+,30k,,,audience research; community; social listening,active
+97,Jay Acunzo,Founder,Unthinkable Media,US,10k+,20k,,,marketing storytelling; content strategy,active
+98,Ali Schwanke,Founder,Simple Strat,US,10k+,20k,,,HubSpot; B2B marketing ops,active
+99,Jeff Ignacio,RevOps leader & creator,Independent,US,10k+,20k,,,RevOps; GTM systems; CRM,active
+100,Max Altschuler,General Partner,GTMfund,US,10k+,40k,,,GTM investing; sales community; startup GTM,active
