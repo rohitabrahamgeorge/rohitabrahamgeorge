@@ -9,8 +9,8 @@
   },
   "schedule": {
     "days": ["Monday", "Wednesday", "Friday"],
-    "collector_time": "09:40",
-    "cloud_time": "10:30",
+    "collector_time": "10:30",
+    "cloud_time": "11:30",
     "timezone": "Asia/Kolkata"
   },
   "roster": {

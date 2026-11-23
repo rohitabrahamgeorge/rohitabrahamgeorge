@@ -28,9 +28,9 @@ Paths below are relative to this skill folder (`SKILL`). State lives in the repo
 LinkedIn needs a login to show anyone's recent posts, and this routine never logs in from
 the cloud or works around LinkedIn's sign-in wall. So scraping happens on Rohit's own
 computer: `local/run.py` (Playwright driving a separate Brave profile he logged into himself)
-runs Monday, Wednesday and Friday at about 9:40 AM IST, reads the roster's activity pages and
+runs Monday, Wednesday and Friday at 10:30 AM IST, reads the roster's activity pages and
 his own, and pushes `linkedin-remix/data/collected/` to the data branch. The cloud run at
-10:30 AM IST picks it up. Setup for his computer: `local/SETUP.md`.
+11:30 AM IST picks it up. Setup for his computer: `local/SETUP.md`.
 
 No Apify. Rohit has no Apify access; the Apify code paths in the scripts are dormant.
 

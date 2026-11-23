@@ -62,11 +62,34 @@ def browser_exe():
 
 def open_context(pw, headless):
     os.makedirs(PROFILE_DIR, exist_ok=True)
-    kw = dict(user_data_dir=PROFILE_DIR, headless=headless, viewport={"width": 1280, "height": 900})
+    # Low-RAM launch: one renderer, no GPU, small JS heap, no background tabs or extensions.
+    args = ["--disable-gpu", "--disable-dev-shm-usage", "--renderer-process-limit=2",
+            "--js-flags=--max-old-space-size=384", "--disable-extensions", "--disable-background-networking",
+            "--disable-features=Translate,MediaRouter,BackForwardCache", "--mute-audio"]
+    kw = dict(user_data_dir=PROFILE_DIR, headless=headless, viewport={"width": 1280, "height": 900}, args=args)
     exe = browser_exe()
     if exe:
         kw["executable_path"] = exe
-    return pw.chromium.launch_persistent_context(**kw)
+    ctx = pw.chromium.launch_persistent_context(**kw)
+    # Never download images, video, audio or fonts: image URLs stay in the page, the bytes are
+    # what eat memory (LinkedIn autoplays videos in the activity feed).
+    if headless:  # the login window keeps images so LinkedIn's verification steps work
+        ctx.route("**/*", lambda r: r.abort() if r.request.resource_type in ("image", "media", "font") else r.continue_())
+    for extra in ctx.pages[1:]:
+        extra.close()
+    return ctx
+
+
+def fresh_page(ctx, page, n):
+    """Every 10 profiles, throw the tab away and start a clean one so memory doesn't pile up."""
+    if n % 10:
+        return page
+    try:
+        page.goto("about:blank")
+        page.close()
+    except Exception:  # noqa: BLE001
+        pass
+    return ctx.new_page()
 
 
 def blocked(page):
@@ -229,10 +252,13 @@ def main():
             if cmd == "roster":
                 cand = json.load(open(os.path.join(DATA, "candidates.json")))
                 out = []
+                n = 0
                 for cat in ("gtm", "pmm"):
                     for c in cand.get(cat, []):
                         if not c.get("linkedin_url"):
                             continue
+                        n += 1
+                        page = fresh_page(ctx, page, n)
                         info = read_profile(page, c["linkedin_url"])
                         out.append({**c, "category": cat, "name": info["name"] or c["name"], "headline": info["headline"],
                                     "location": info["location"], "followers": to_int(info["followers"])})
@@ -247,6 +273,7 @@ def main():
             people += [e for e in roster["experts"] if e.get("tier") == "bench"][:6]  # spares for swaps
             items, failed = [], []
             for i, e in enumerate(people, 1):
+                page = fresh_page(ctx, page, i)
                 try:
                     got = read_activity(page, e["linkedin_url"], cutoff, debug)
                     items += got

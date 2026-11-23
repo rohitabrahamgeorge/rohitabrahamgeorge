@@ -1,7 +1,7 @@
 # Set up the LinkedIn collector on your computer (one time, about 10 minutes)
 
 The collector reads your 60 experts' recent posts while logged into LinkedIn as you, then
-pushes them to GitHub. The cloud routine (Mon, Wed, Fri at 10:30 AM IST) does everything else.
+pushes them to GitHub. The cloud routine (Mon, Wed, Fri at 11:30 AM IST) does everything else.
 
 It uses Brave, but a **separate Brave profile** just for this, so your normal Brave windows,
 tabs and logins are untouched.
@@ -52,12 +52,12 @@ minutes. It is slow on purpose: one profile every 10 to 20 seconds, like a perso
 If a profile shows 0 posts when you know it has some, run with `--debug` and the cloud run
 will use the saved page to fix the selectors.
 
-## 5. Schedule it (Mon, Wed, Fri at 9:40 AM)
+## 5. Schedule it (Mon, Wed, Fri at 10:30 AM)
 
 Your computer has to be on and awake at that time.
 
 **Option A: Claude desktop app.** Claude Code → Scheduled tasks → New local task. Choose
-the `linkedin-remix-repo` folder, set it to Monday, Wednesday and Friday at 9:40 AM, with this
+the `linkedin-remix-repo` folder, set it to Monday, Wednesday and Friday at 10:30 AM, with this
 prompt:
 
 > Run `python3 .claude/skills/linkedin-post-remix-engine/local/run.py` in this folder and
@@ -68,11 +68,11 @@ The desktop app has to be open for it to fire.
 **Option B: Mac, no Claude needed.** Run `crontab -e` and add (fix the path):
 
 ```
-40 9 * * 1,3,5 cd ~/linkedin-remix-repo && /usr/bin/env python3 .claude/skills/linkedin-post-remix-engine/local/run.py >> ~/linkedin-remix.log 2>&1
+30 10 * * 1,3,5 cd ~/linkedin-remix-repo && /usr/bin/env python3 .claude/skills/linkedin-post-remix-engine/local/run.py >> ~/linkedin-remix.log 2>&1
 ```
 
 **Option B: Windows, no Claude needed.** Task Scheduler → Create Basic Task → Weekly, Mon
-Wed Fri, 9:40 AM → Start a program: `python`, arguments
+Wed Fri, 10:30 AM → Start a program: `python`, arguments
 `.claude\skills\linkedin-post-remix-engine\local\run.py`, start in: your
 `linkedin-remix-repo` folder.
 
