@@ -158,6 +158,84 @@ def cmd_profile(pw, args):
     out(info)
 
 
+AGE_RE = re.compile(r"(?:^|•\s*)(\d+\s*(?:s|m|h|d|w|mo|yr|y))\s*•", re.I)
+
+
+def _post_link(ctx, p, container):
+    """Get a post's canonical URL via its '...' menu > 'Copy link to post' (new UI has no links)."""
+    try:
+        container.locator("button[aria-label^='Open control menu']").first.click()
+        human_pause(0.8, 1.4)
+        p.get_by_role("menuitem", name="Copy link to post").first.click() \
+            if p.get_by_role("menuitem", name="Copy link to post").count() \
+            else p.get_by_text("Copy link to post").first.click()
+        human_pause(0.8, 1.4)
+        short = p.evaluate("navigator.clipboard.readText()")
+    except Exception:
+        p.keyboard.press("Escape")
+        return None
+    if not short or "linkedin.com" not in short and "lnkd.in" not in short:
+        return None
+    t = ctx.new_page()
+    try:
+        t.goto(short, wait_until="domcontentloaded")
+        human_pause(1.5, 2.5)
+        final = t.url
+    finally:
+        t.close()
+    m = re.search(r"urn:li:(activity|ugcPost|share):\d+", final) or \
+        re.search(r"activity-(\d+)", final)
+    if m and m.group(0).startswith("urn:"):
+        return "https://www.linkedin.com/feed/update/" + m.group(0) + "/"
+    if m:
+        return "https://www.linkedin.com/feed/update/urn:li:activity:" + m.group(1) + "/"
+    return final.split("?")[0]
+
+
+def _latest_new_ui(ctx, p, n):
+    ctx.grant_permissions(["clipboard-read", "clipboard-write"], origin="https://www.linkedin.com")
+    conts = p.locator("main div[data-lazy-mount-id]").filter(has_text="Feed post")
+    res, originals = [], 0
+    for i in range(min(conts.count(), n * 3)):
+        c = conts.nth(i)
+        more = c.get_by_role("button", name=re.compile(r"more$", re.I))
+        if more.count():
+            try:
+                more.first.click()
+                human_pause(0.4, 0.8)
+            except Exception:
+                pass
+        lines = [l.strip() for l in c.inner_text().split("\n")]
+        head = " ".join(lines[:8]).lower()
+        is_repost = "reposted" in head
+        is_other = any(k in head for k in ("commented on", "likes this", "celebrates", "loves this",
+                                           "finds this", "supports this", "replied"))
+        age, body_start = "", 0
+        for j, l in enumerate(lines):
+            m = AGE_RE.search(l)
+            if m:
+                age = m.group(1).replace(" ", "")
+                body_start = j + 1
+                break
+        body = lines[body_start:]
+        if body and body[0] in ("", "Follow"):
+            while body and body[0] in ("", "Follow"):
+                body = body[1:]
+        text = "\n".join(body).replace("… more", "").strip()
+        text = re.sub(r"(\n[\d,\s​]*)+$", "", text)  # drop trailing reaction/comment counts
+        item = {"urn": None, "post_url": None, "age": age, "is_repost": is_repost,
+                "is_other_activity": is_other, "text": text[:4000]}
+        if not is_repost and not is_other and originals < n:
+            item["post_url"] = _post_link(ctx, p, c)
+            u = item["post_url"] or ""
+            m = re.search(r"urn:li:\w+:\d+", u)
+            m2 = re.search(r"-(?:share|activity|ugcPost)-(\d{15,})", u)
+            item["urn"] = m.group(0) if m else (f"urn:li:activity:{m2.group(1)}" if m2 else None)
+            originals += 1
+        res.append(item)
+    return res
+
+
 def cmd_latest(pw, args):
     url = args[0].rstrip("/")
     n = int(args[args.index("--n") + 1]) if "--n" in args else 3
@@ -190,6 +268,8 @@ def cmd_latest(pw, args):
       }
       return res;
     }""", n)
+    if not posts:  # LinkedIn's 2026 markup: hashed classes, no data-urn on posts
+        posts = _latest_new_ui(ctx, p, n)
     originals = [x for x in posts if not x["is_repost"] and not x["is_other_activity"]][:n]
     res = {"profile": url, "posts": originals, "skipped_non_original": len(posts) - len(originals)}
     if not posts:

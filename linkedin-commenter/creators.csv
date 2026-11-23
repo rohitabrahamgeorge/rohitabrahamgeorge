@@ -1,8 +1,8 @@
 id,name,role,company,region,tier,est_followers,verified_followers,linkedin_url,topics,status
-1,Morgan J Ingram,GTM & sales creator,AMP Creative,US,100k+,150k,,,outbound; video prospecting; GTM content,active
-2,Josh Braun,Sales trainer & founder,Josh Braun Sales,US,100k+,150k,,,cold email; detachment selling; outbound,active
-3,Peep Laja,Founder,Wynter,Europe (Estonia)/US,100k+,150k,,,message testing; positioning; B2B marketing,active
-4,Florin Tatulea,Sales leader & creator,Independent,Canada,100k+,120k,,,SDR leadership; outbound; cold calling,active
+1,Morgan J Ingram,GTM & sales creator,AMP Creative,US,100k+,150k,200716,https://www.linkedin.com/in/morganjingramamp/,outbound; video prospecting; GTM content,active
+2,Josh Braun,Sales trainer & founder,Josh Braun Sales,US,100k+,150k,290669,https://www.linkedin.com/in/josh-braun/,cold email; detachment selling; outbound,active
+3,Peep Laja,Founder,Wynter,Europe (Estonia)/US,50k+,150k,85866,https://www.linkedin.com/in/peeplaja/,message testing; positioning; B2B marketing,active
+4,Florin Tatulea,Sales leader & creator,Independent,Canada,50k+,120k,76441,https://www.linkedin.com/in/florintatulea/,SDR leadership; outbound; cold calling,active
 5,Daniel Disney,Founder,The Daily Sales,UK,100k+,250k,,,social selling; LinkedIn for sales,active
 6,Kevin Dorsey (KD),Sales leadership coach,Independent,US,100k+,120k,,,sales management; coaching; revenue leadership,active
 7,Chris Orlob,Founder,pclub.io,US,100k+,150k,,,discovery; deal execution; sales skills,active
@@ -32,9 +32,9 @@ id,name,role,company,region,tier,est_followers,verified_followers,linkedin_url,t
 31,Leah Tharin,PLG advisor & creator,Leah's ProducTea,Europe (Switzerland),100k+,100k,,,product-led growth; growth teams; PLG + sales,active
 32,Jacco van der Kooij,Founder,Winning by Design,Europe (Netherlands)/US,100k+,100k,,,revenue architecture; bowtie model; SaaS metrics,active
 33,Gaetano DiNardi,Growth marketing advisor,Independent,US,100k+,100k,,,demand gen; SEO; B2B growth,active
-34,Anthony Pierri,Co-founder,FletchPMM,US,50k+,70k,,,positioning; homepage messaging; product marketing,active
-35,Emily Kramer,Co-founder,MKT1,US,50k+,60k,,,startup marketing; marketing teams; demand gen,active
-36,Kyle Coleman,B2B CMO,Independent,US,50k+,70k,,,AI in GTM; sales and marketing; brand,active
+34,Anthony Pierri,Co-founder,FletchPMM,US,50k+,70k,85326,https://www.linkedin.com/in/anthonypierri/,positioning; homepage messaging; product marketing,active
+35,Emily Kramer,Co-founder,MKT1,US,50k+,60k,55569,https://www.linkedin.com/in/emilykramer/,startup marketing; marketing teams; demand gen,active
+36,Kyle Coleman,B2B CMO,Independent,US,100k+,70k,160396,https://www.linkedin.com/in/kyletcoleman/,AI in GTM; sales and marketing; brand,active
 37,Nate Nasralla,Co-founder,Fluint,US,50k+,60k,,,champion building; business cases; enterprise deals,active
 38,Armand Farrokh,Co-host & founder,30 Minutes to President's Club,US,50k+,70k,,,sales tactics; discovery; cold calling,active
 39,Nick Cegelski,Co-host & founder,30 Minutes to President's Club,US,50k+,60k,,,sales tactics; objection handling,active
@@ -65,10 +65,10 @@ id,name,role,company,region,tier,est_followers,verified_followers,linkedin_url,t
 64,Tim Soulo,CMO,Ahrefs,Europe,50k+,50k,,,product-led content; SEO; marketing teams,active
 65,Brian Balfour,Founder,Reforge,US,50k+,60k,,,growth strategy; AI product distribution,active
 66,Nicole Leffer,AI marketing advisor,Independent,US,50k+,50k,,,AI for marketers; marketing workflows,active
-67,Robert Kaminski,Co-founder,FletchPMM,US,10k+,30k,,,product marketing; positioning; messaging,active
-68,Andy Raskin,Strategic narrative advisor,Independent,US,10k+,30k,,,strategic narrative; pitch; positioning,active
-69,Martina Lauchengco,Partner & author (Loved),Costanoa Ventures,US,10k+,20k,,,product marketing; GTM for startups,active
-70,Richard King,Founder,Product Marketing Alliance,UK,10k+,30k,,,product marketing community; PMM careers,active
+67,Robert Kaminski,Co-founder,FletchPMM,US,50k+,30k,70788,https://www.linkedin.com/in/heyrobk/,product marketing; positioning; messaging,active
+68,Andy Raskin,Strategic narrative advisor,Independent,US,50k+,30k,61934,https://www.linkedin.com/in/andyraskin/,strategic narrative; pitch; positioning,active
+69,Martina Lauchengco,Partner & author (Loved),Costanoa Ventures,US,10k+,20k,18599,https://www.linkedin.com/in/martinalauchengco/,product marketing; GTM for startups,active
+70,Richard King,Founder,Product Marketing Alliance,UK,100k+,30k,108654,https://www.linkedin.com/in/richardking001/,product marketing community; PMM careers,active
 71,Natalie Marcotullio,Head of Growth & Marketing,Navattic,US,10k+,15k,,,product marketing; interactive demos; PLG,active
 72,Nick Bennett,Founder,TACK,US,10k+,40k,,,product marketing; positioning; launches,active
 73,Jordan Crawford,Founder,Blueprint,US,10k+,30k,,,signal-based outbound; data-driven prospecting,active
