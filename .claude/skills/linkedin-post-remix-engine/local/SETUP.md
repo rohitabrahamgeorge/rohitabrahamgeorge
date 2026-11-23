@@ -35,8 +35,8 @@ python3 .claude/skills/linkedin-post-remix-engine/local/collect.py login
 
 A Brave window opens on the LinkedIn login page. Log in with your **LinkedIn email and
 password** (Google may refuse "Sign in with Google" in a window controlled by a script).
-Finish any verification code LinkedIn sends you. When your feed shows, go back to the
-terminal and press Enter. The session is saved in `~/.linkedin-remix/browser-profile` and
+Finish any verification code LinkedIn sends you. When your feed shows, the window closes by
+itself. The session is saved in `~/.linkedin-remix/browser-profile` and
 reused on every run. You won't need to do this again unless LinkedIn logs you out.
 
 ## 4. First run

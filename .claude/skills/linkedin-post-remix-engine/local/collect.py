@@ -209,8 +209,16 @@ def main():
             ctx = open_context(pw, headless=False)
             page = ctx.pages[0] if ctx.pages else ctx.new_page()
             page.goto("https://www.linkedin.com/login")
-            print("Log into LinkedIn in the window that opened. When your feed shows, come back here.")
-            input("Press Enter once you're logged in... ")
+            print("Log into LinkedIn in the Brave window that opened. This finishes by itself once your feed shows "
+                  "(waits up to 10 minutes).", flush=True)
+            for _ in range(600):
+                if "/feed" in page.url or "/in/" in page.url:
+                    page.wait_for_timeout(3000)
+                    break
+                page.wait_for_timeout(1000)
+            else:
+                ctx.close()
+                sys.exit("Timed out waiting for the LinkedIn feed. Run login again.")
             ctx.close()
             print(f"Saved. Session lives in {PROFILE_DIR}")
             return
