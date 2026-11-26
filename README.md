@@ -10,6 +10,14 @@ Your content should be winning customers. Now it can. At Edbound, we build what 
 - Writing about product marketing, positioning, and content strategy that wins customers
 - Exploring how AI workflows reshape the way marketing teams create, distribute, and convert content
    
+# Case Studies
+
+## Podcast to Pipeline: Edbound With Kinner
+
+<a href="https://rohitabrahamgeorge.github.io/content-repurposing/"><img src="https://raw.githubusercontent.com/rohitabrahamgeorge/rohitabrahamgeorge.github.io/main/assets/repurposing-hero.svg" alt="Figure: one Edbound With Kinner episode becomes twelve assets across YouTube, Instagram, LinkedIn and edbound.ai, all leading to one name and email gate" width="720"></a>
+
+**One podcast episode. Twelve assets. One gate.** How every episode of *Edbound With Kinner* becomes YouTube Shorts, Instagram Reels, a LinkedIn post, an SEO article and a gated playbook, written in the host's own voice with Claude skills (`kinner-voice`, `kinner-comment-engine` and the [Podcast Repurposing Engine](https://github.com/rohitabrahamgeorge/podcast-repurposing-engine)). On one episode, the eight clips drew 1.9× the views of the full episode, and every one pointed to a name and email gate. **[See the full set, embedded →](https://rohitabrahamgeorge.github.io/content-repurposing/)**
+
 # Website Projects
 
 Animated homepages that run live in the browser. **[See all my work →](https://rohitabrahamgeorge.github.io/)**
