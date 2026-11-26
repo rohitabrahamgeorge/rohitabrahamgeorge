@@ -14,9 +14,9 @@ Your content should be winning customers. Now it can. At Edbound, we build what 
 
 ## Podcast to Pipeline: Edbound With Kinner
 
-<a href="https://rohitabrahamgeorge.github.io/content-repurposing/"><img src="https://raw.githubusercontent.com/rohitabrahamgeorge/rohitabrahamgeorge.github.io/main/assets/repurposing-hero.svg" alt="Figure: one Edbound With Kinner episode becomes twelve assets across YouTube, Instagram, LinkedIn and edbound.ai, all leading to one name and email gate" width="720"></a>
+<a href="https://rohitabrahamgeorge.github.io/content-repurposing/"><img src="https://raw.githubusercontent.com/rohitabrahamgeorge/rohitabrahamgeorge.github.io/main/assets/repurposing-hero.svg" alt="Figure: one Edbound With Kinner episode becomes thirteen assets across YouTube, Instagram, LinkedIn and edbound.ai, all leading to one gated playbook" width="720"></a>
 
-**One podcast episode. Twelve assets. One gate.** How every episode of *Edbound With Kinner* becomes YouTube Shorts, Instagram Reels, a LinkedIn post, an SEO article and a gated playbook, written in the host's own voice with Claude skills (`kinner-voice`, `kinner-comment-engine` and the [Podcast Repurposing Engine](https://github.com/rohitabrahamgeorge/podcast-repurposing-engine)). On one episode, the eight clips drew 1.9× the views of the full episode, and every one pointed to a name and email gate. **[See the full set, embedded →](https://rohitabrahamgeorge.github.io/content-repurposing/)**
+**One podcast episode. Thirteen assets. One gate.** How every episode of *Edbound With Kinner* becomes YouTube Shorts, Instagram Reels, a LinkedIn post, an SEO article and a gated playbook, written in the host's own voice with Claude skills (`kinner-voice`, `kinner-comment-engine` and the [Podcast Repurposing Engine](https://github.com/rohitabrahamgeorge/podcast-repurposing-engine)). On Ivan Falco's ColdIQ episode, the nine clips drew 2.5× the views of the full episode, and every one pointed back to a gated playbook. **[See the full set, embedded →](https://rohitabrahamgeorge.github.io/content-repurposing/)**
 
 # Website Projects
 
